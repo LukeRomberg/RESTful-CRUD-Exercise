@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const query = require('./db/query.js');
 // Bring in the queries object that has all of the db query functions
 
 // Create the route for get all
