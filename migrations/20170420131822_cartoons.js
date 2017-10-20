@@ -1,4 +1,3 @@
-
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('cartoon', function(table) {
     table.increments();
@@ -9,5 +8,5 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExists('cartoon'); 
+  return knex.schema.dropTableIfExists('cartoon')
 };
